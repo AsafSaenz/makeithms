@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}Make It MS | Auditorías y seguridad{% endblock %}
+{% block content %}
+<header class="bg-noche text-white border-b border-[#2A3C5C]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 py-4 flex flex-wrap items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-3">
+      <svg width="44" height="50" viewBox="0 0 64 72" aria-hidden="true" style="--g:#2F9E4F;--b:#3B72D9;--r:#D93A45;--gap:#0E1A2F;--ring:#C9D2E3;--gl:#fff"><use href="#mk-master"/></svg>
+      <span class="flex flex-col gap-1">
+        <span class="font-titulo font-bold text-2xl leading-none tracking-tight">Make It MS</span>
+        <span class="flex gap-2 font-titulo font-bold text-[11px] tracking-widest"><span class="text-good-claro">GOOD</span><span class="text-safe-claro">SAFE</span><span class="text-green-claro">GREEN</span></span>
+      </span>
+    </a>
+    <nav class="flex items-center gap-6 text-sm font-semibold">
+      <a href="#servicios" class="hidden sm:inline">Servicios</a>
+      <a href="#proceso" class="hidden sm:inline">Cómo trabajamos</a>
+      <a href="#cotizacion" class="bg-green-claro text-noche px-4 py-3 rounded-lg font-bold">Pedir cotización</a>
+    </nav>
+  </div>
+</header>
+
+<section id="inicio" class="bg-noche text-[#E3E9F5]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 pt-14 pb-20 grid gap-12 lg:grid-cols-2 items-center">
+    <div class="flex flex-col gap-6">
+      <p class="text-sm font-bold tracking-widest uppercase text-green-claro">Auditorías y seguridad para empresas</p>
+      <h1 class="font-titulo font-bold text-4xl sm:text-6xl leading-tight text-white">Hazlo <span class="text-good-claro">bien</span>.<br>Hazlo <span class="text-safe-claro">seguro</span>.<br>Hazlo <span class="text-green-claro">verde</span>.</h1>
+      <p class="text-lg leading-relaxed text-[#B7C3DA] max-w-xl">Auditamos y fortalecemos la operación de tu empresa con cuestionarios claros, revisión en sitio y un plan de acción que sí se puede ejecutar.</p>
+      <div class="flex flex-wrap gap-4">
+        <a href="#cotizacion" class="bg-green-claro text-noche px-6 py-4 rounded-lg font-bold">Pedir cotización</a>
+        <a href="#servicios" class="border border-[#5C6F93] text-white px-6 py-4 rounded-lg font-bold">Ver servicios</a>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4">
+      <div class="bg-[#16263F] border border-[#2A3C5C] rounded-2xl p-5 flex items-center gap-5">
+        <svg width="52" height="58" viewBox="0 0 64 72" class="shrink-0" aria-hidden="true" style="--c:#D93A45"><use href="#mk-pilar"/><use href="#g-check" x="14" y="19" width="36" height="36" style="--glyph:#fff"/></svg>
+        <div><p class="font-titulo text-xl font-bold text-white">Make It <span class="text-good-claro">GOOD</span></p><p class="text-[#B7C3DA]">Calidad y cumplimiento verificados, no supuestos.</p></div>
+      </div>
+      <div class="bg-[#16263F] border border-[#2A3C5C] rounded-2xl p-5 flex items-center gap-5">
+        <svg width="52" height="58" viewBox="0 0 64 72" class="shrink-0" aria-hidden="true" style="--c:#3B72D9"><use href="#mk-pilar"/><use href="#g-knot" x="14" y="19" width="36" height="36" style="--glyph:#fff;--cut:#3B72D9"/></svg>
+        <div><p class="font-titulo text-xl font-bold text-white">Make It <span class="text-safe-claro">SAFE</span></p><p class="text-[#B7C3DA]">Riesgos identificados y controles que realmente funcionan.</p></div>
+      </div>
+      <div class="bg-[#16263F] border border-[#2A3C5C] rounded-2xl p-5 flex items-center gap-5">
+        <svg width="52" height="58" viewBox="0 0 64 72" class="shrink-0" aria-hidden="true" style="--c:#2F9E4F"><use href="#mk-pilar"/><use href="#g-leaf" x="14" y="19" width="36" height="36" style="--glyph:#fff;--cut:#2F9E4F"/></svg>
+        <div><p class="font-titulo text-xl font-bold text-white">Make It <span class="text-green-claro">GREEN</span></p><p class="text-[#B7C3DA]">Operación más eficiente y con menor impacto ambiental.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" class="max-w-6xl mx-auto px-4 sm:px-8 py-20 flex flex-col gap-10">
+  <div class="max-w-2xl flex flex-col gap-3">
+    <p class="text-sm font-bold tracking-widest uppercase text-safe">Servicios</p>
+    <h2 class="font-titulo font-bold text-3xl sm:text-4xl">Tres frentes, un solo equipo</h2>
+    <p class="text-lg text-gray-600">Revisamos tu empresa desde la calidad, la seguridad y el impacto ambiental, y te entregamos un diagnóstico unificado.</p>
+  </div>
+  <div class="grid gap-6 md:grid-cols-3">
+    <article class="bg-white border border-[#E3E6EF] rounded-2xl p-8 flex flex-col gap-3">
+      <h3 class="font-titulo text-2xl font-bold text-good">Auditorías</h3>
+      <p class="text-gray-600">Evaluamos procesos, documentación y cumplimiento frente a la norma que tu empresa necesita.</p>
+    </article>
+    <article class="bg-white border border-[#E3E6EF] rounded-2xl p-8 flex flex-col gap-3">
+      <h3 class="font-titulo text-2xl font-bold text-safe">Seguridad</h3>
+      <p class="text-gray-600">Identificamos riesgos en instalaciones, personas y operación, y definimos controles proporcionales.</p>
+    </article>
+    <article class="bg-white border border-[#E3E6EF] rounded-2xl p-8 flex flex-col gap-3">
+      <h3 class="font-titulo text-2xl font-bold text-green">Sustentabilidad</h3>
+      <p class="text-gray-600">Medimos el desempeño ambiental de tu operación y te mostramos dónde ahorrar y reducir impacto.</p>
+    </article>
+  </div>
+</section>
+
+<section id="proceso" class="bg-white border-y border-[#E3E6EF]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 py-20 flex flex-col gap-10">
+    <h2 class="font-titulo font-bold text-3xl sm:text-4xl">Un proceso claro, de principio a fin</h2>
+    <ol class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <li class="border-t-4 border-green pt-5"><p class="font-titulo text-4xl font-bold">01</p><h3 class="font-titulo text-xl font-bold mt-2">Cuestionario en línea</h3><p class="text-gray-600 mt-2">Tu empresa lo responde desde cualquier dispositivo.</p></li>
+      <li class="border-t-4 border-safe pt-5"><p class="font-titulo text-4xl font-bold">02</p><h3 class="font-titulo text-xl font-bold mt-2">Revisión y visita</h3><p class="text-gray-600 mt-2">Verificamos en sitio lo que haga falta confirmar.</p></li>
+      <li class="border-t-4 border-good pt-5"><p class="font-titulo text-4xl font-bold">03</p><h3 class="font-titulo text-xl font-bold mt-2">Informe de hallazgos</h3><p class="text-gray-600 mt-2">Qué está bien, qué no y qué tan urgente es.</p></li>
+      <li class="border-t-4 border-marino pt-5"><p class="font-titulo text-4xl font-bold">04</p><h3 class="font-titulo text-xl font-bold mt-2">Plan de acción</h3><p class="text-gray-600 mt-2">Acciones, responsables y fechas con seguimiento.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="cotizacion" class="bg-noche text-[#E3E9F5]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 py-20 grid gap-12 lg:grid-cols-2 items-start">
+    <div class="flex flex-col gap-4">
+      <p class="text-sm font-bold tracking-widest uppercase text-green-claro">Cotización</p>
+      <h2 class="font-titulo font-bold text-3xl sm:text-4xl text-white">Cuéntanos qué necesita tu empresa</h2>
+      <p class="text-lg text-[#B7C3DA]">Llena el formulario y te respondemos con una propuesta a la medida.</p>
+      {# TODO: datos de contacto reales de Hugo #}
+    </div>
+    <div class="bg-white text-marino rounded-2xl p-6 sm:p-9">
+      {% include "landing/_form_cotizacion.html" %}
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#0A1424] text-[#B7C3DA]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-8 py-10 flex flex-wrap items-center justify-between gap-4 text-sm">
+    <span class="font-titulo font-bold text-xl text-white">Make It MS</span>
+    <span>© {% now "Y" %} Make It MS. Todos los derechos reservados.</span>
+  </div>
+</footer>
+{% endblock %}

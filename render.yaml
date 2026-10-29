@@ -1,0 +1,40 @@
+# Despliegue en Render (Blueprint). Ajusta planes antes de producción.
+databases:
+  - name: makeithms-db
+    plan: basic-256mb
+    databaseName: makeithms
+    user: makeithms
+
+services:
+  - type: web
+    name: makeithms
+    runtime: python
+    plan: starter
+    buildCommand: ./build.sh
+    # django-q2 corre dentro del mismo servicio para no pagar un worker aparte.
+    startCommand: python manage.py qcluster & gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: makeithms-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: makeithms.onrender.com,makeithms.com,www.makeithms.com
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://makeithms.onrender.com,https://makeithms.com,https://www.makeithms.com
+      - key: PYTHON_VERSION
+        value: "3.13.1"
+      - key: R2_BUCKET
+        sync: false
+      - key: R2_ACCESS_KEY_ID
+        sync: false
+      - key: R2_SECRET_ACCESS_KEY
+        sync: false
+      - key: R2_ENDPOINT_URL
+        sync: false
+      - key: EMAIL_HOST_PASSWORD
+        sync: false

@@ -1,0 +1,20 @@
+<form hx-post="{% url 'landing:cotizar' %}" hx-swap="outerHTML" class="flex flex-col gap-5">
+  {% csrf_token %}
+  {% for field in form %}
+  <div class="flex flex-col gap-1.5">
+    <label for="{{ field.id_for_label }}" class="text-sm font-bold">{{ field.label }}</label>
+    {{ field }}
+    {% for error in field.errors %}<p class="text-sm text-good">{{ error }}</p>{% endfor %}
+  </div>
+  {% endfor %}
+  <button type="submit" class="bg-marino text-white font-bold rounded-lg px-6 py-4 min-h-[52px]">
+    Solicitar cotización
+    <span class="htmx-indicator ml-2">…</span>
+  </button>
+</form>
+<style>
+  #cotizacion input, #cotizacion select, #cotizacion textarea {
+    font: inherit; font-size: 16px; padding: 12px 14px; border: 1.5px solid #8A94A8;
+    border-radius: 8px; width: 100%; background: #fff; box-sizing: border-box;
+  }
+</style>

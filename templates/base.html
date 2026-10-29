@@ -1,0 +1,32 @@
+{% load static %}<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Make It MS{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700&display=swap">
+{# Tailwind por CDN para arrancar rápido. Antes de producción: compilar con el CLI de Tailwind. #}
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        marino: "#14213D", noche: "#0E1A2F", fondo: "#F4F6FA",
+        good: "#C0212F", safe: "#1E4FA3", green: "#2B7A3E",
+        "good-claro": "#FF8A91", "safe-claro": "#8FB2FF", "green-claro": "#6FD08A",
+      },
+      fontFamily: { titulo: ["Sora", "sans-serif"], sans: ["Manrope", "system-ui", "sans-serif"] },
+    },
+  },
+};
+</script>
+<script src="https://unpkg.com/htmx.org@2.0.4" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-fondo text-marino font-sans antialiased" hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+{% include "_escudo_defs.html" %}
+{% block content %}{% endblock %}
+</body>
+</html>
