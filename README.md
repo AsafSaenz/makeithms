@@ -1,6 +1,6 @@
-# Make It MS
+# Make It HMS
 
-Plataforma QHSE de Make It MS: auditorías con cuestionarios para cliente y auditor, seguimiento de hallazgos, control documental y landing con solicitudes de cotización.
+Plataforma QHSE de Make It HMS: auditorías con cuestionarios para cliente y auditor, seguimiento de hallazgos, control documental y landing con solicitudes de cotización.
 
 *Make it good. Make it safe. Make it green.*
 

@@ -15,7 +15,7 @@ class EmpresaAdmin(admin.ModelAdmin):
 class UsuarioAdmin(UserAdmin):
     list_display = ["username", "email", "empresa", "rol", "is_active"]
     list_filter = ["rol", "empresa", "is_active"]
-    fieldsets = UserAdmin.fieldsets + (("Make It MS", {"fields": ("empresa", "rol", "telefono")}),)
+    fieldsets = UserAdmin.fieldsets + (("Make It HMS", {"fields": ("empresa", "rol", "telefono")}),)
 
 
 class ProyectoUsuarioInline(admin.TabularInline):

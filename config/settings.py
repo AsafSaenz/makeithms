@@ -124,7 +124,7 @@ if env("EMAIL_HOST_PASSWORD", default=""):
     EMAIL_USE_TLS = True
 else:
     EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="Make It MS <no-reply@makeithms.com>")
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL", default="Make It HMS <no-reply@makeithms.com>")
 
 # Tareas en segundo plano con la misma base de datos (sin Redis).
 Q_CLUSTER = {

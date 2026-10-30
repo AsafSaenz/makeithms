@@ -8,7 +8,7 @@ from apps.cuentas.models import Seccion
 
 
 class Plantilla(TimeStampedModel):
-    """Plantilla de cuestionario o lista de verificación. La administra Make It MS."""
+    """Plantilla de cuestionario o lista de verificación. La administra Make It HMS."""
 
     nombre = models.CharField(max_length=200)
     norma = models.CharField(max_length=120, blank=True, help_text="Ej. ISO 45001, NOM-030-STPS")

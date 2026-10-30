@@ -8,7 +8,7 @@ class Empresa(TimeStampedModel):
     nombre = models.CharField(max_length=200)
     rfc = models.CharField("RFC", max_length=13, blank=True)
     es_administradora = models.BooleanField(
-        default=False, help_text="Marca a Make It MS, la empresa que administra la plataforma."
+        default=False, help_text="Marca a Make It HMS, la empresa que administra la plataforma."
     )
     limite_usuarios = models.PositiveIntegerField(null=True, blank=True)
     activa = models.BooleanField(default=True)
