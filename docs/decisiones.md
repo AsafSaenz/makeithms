@@ -20,4 +20,4 @@ Plan completo: https://claude.ai/artifact/5bMceGY6qsekgoRFWYuc6r
 | PDF | WeasyPrint | Reportes con el CSS de la marca |
 
 ## Pendiente de confirmar con Hugo
-Ver la sección de preguntas del plan.
+Respuestas recibidas y pendientes en [requisitos.md](requisitos.md).
