@@ -35,6 +35,7 @@ Contacto: Ing. Hugo Montemayor, +52 81 2200 3118, México.
 | ITP | Hugo enviará un ejemplo lleno y uno vacío |
 | Estructura documental | Hugo la enviará |
 | Punch list e inspecciones | Se capturan en la plataforma; deben poder exportarse a Excel |
+| Programa de inspecciones | Entra en la primera etapa si es posible. Se programa por área (ej. Laminación) o por equipo (ej. Motor #…) |
 
 ## Material recibido (05/11/2026)
 Formatos de auditoría interna (notificación, lista de verificación vacía, asistencia, informe, reporte de deficiencia), programa de inspecciones con dashboard, reporte fotográfico, informe de inspección de material y un punch list. Contienen datos reales del cliente y no se guardan en este repo.
