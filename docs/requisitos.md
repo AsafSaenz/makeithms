@@ -25,13 +25,26 @@ Contacto: Ing. Hugo Montemayor, +52 81 2200 3118, México.
 - MS = Management System.
 - Dominio: Hugo tenía makeithms.com; falta confirmar si se puede reactivar.
 
+## Respuestas del 05/11/2026
+| Tema | Respuesta |
+| --- | --- |
+| RDA | Reporte de Deficiencia de Auditoría |
+| RDP | Reporte de Deficiencia Potencial |
+| Calificación de auditorías | No hay puntaje. El estatus es: planeada, en proceso, cerrada o cancelada |
+| Listas de verificación | Muchas veces se arman específicas para lo que se audita; Hugo enviará dos ejemplos |
+| ITP | Hugo enviará un ejemplo lleno y uno vacío |
+| Estructura documental | Hugo la enviará |
+| Punch list e inspecciones | Se capturan en la plataforma; deben poder exportarse a Excel |
+
+## Material recibido (05/11/2026)
+Formatos de auditoría interna (notificación, lista de verificación vacía, asistencia, informe, reporte de deficiencia), programa de inspecciones con dashboard, reporte fotográfico, informe de inspección de material y un punch list. Contienen datos reales del cliente y no se guardan en este repo.
+
 ## Implicaciones para el diseño
 - Cobro por usuario: necesitamos un límite de usuarios activos por `Empresa` (tope del paquete).
 - `quien_responde = Cliente` ya no implica llenado previo: el cliente responde durante la auditoría.
 - Área geográfica: modelo flexible (sitio / región / país).
 
 ## Pendientes
-- Recibir la carpeta de estructura documental y los formatos.
-- Aclarar con Hugo cómo se califican las auditorías.
+- Recibir de Hugo la estructura documental y los ejemplos de ITP (lleno y vacío) y de listas de verificación.
 - Definir los módulos de la segunda etapa además de Cumplimiento legal.
 - Confirmar la reactivación del dominio makeithms.com.
