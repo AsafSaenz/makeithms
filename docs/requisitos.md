@@ -7,7 +7,7 @@ Contacto: Ing. Hugo Montemayor, +52 81 2200 3118, México.
 | --- | --- |
 | Usuarios | Clientes (empresas) que ingresan solos con su usuario y registran todo en la herramienta |
 | Modelo de negocio | Plataforma vendida **por usuario**, en paquetes de 5, 10, etc. |
-| Segunda etapa | Cumplimiento legal y un par de módulos más (por definir) |
+| Segunda etapa | Cumplimiento legal y un par de módulos más (por definir). **Decisión 05/11/2026: todo entra en la primera fase** |
 | Control documental | Hugo entregará una carpeta con la estructura que los clientes usarán para cargar documentos |
 | Personal | Incluye competencia (capacitaciones, expedientes) |
 
@@ -47,5 +47,5 @@ Formatos de auditoría interna (notificación, lista de verificación vacía, as
 
 ## Pendientes
 - Recibir de Hugo la estructura documental y los ejemplos de ITP (lleno y vacío) y de listas de verificación.
-- Definir los módulos de la segunda etapa además de Cumplimiento legal.
+- Definir cuáles son los "par de módulos más" que acompañan a Cumplimiento legal (ahora también en la primera fase).
 - Confirmar la reactivación del dominio makeithms.com.
