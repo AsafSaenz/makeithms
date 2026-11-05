@@ -49,7 +49,7 @@ Formatos de auditoría interna (notificación, lista de verificación vacía, as
 - **ITP** (Plan de Inspección y Pruebas) de montaje de estructuras metálicas. Cada actividad tiene requisito, documento de referencia, registro y códigos por responsable (contratista, supervisión y cliente).
   - Códigos: W testificar, H punto de espera, R revisión de registro, I inspección, E ejecutar, M monitorear, V verificar, A aceptar.
   - Un responsable puede tener varios códigos en la misma actividad (por ejemplo H e I).
-- **Estructura documental del SIG** (Sistema Integrado de Gestión): carpetas 00 Gobierno del Sistema, 01 Liderazgo, 02 Información Documentada y 03 Gestión de Riesgos. El mensaje llegó cortado en la carpeta 03 (terminaba en "Plan…"). Hugo aclara que esa estructura es por norma y que el usuario debe poder crear carpetas propias, más bien por proceso.
+- **Estructura documental del SIG** (Sistema Integrado de Gestión): carpetas 00 Gobierno del Sistema, 01 Liderazgo, 02 Información Documentada y 03 Gestión de Riesgos. Llegó completa en un segundo mensaje: 15 carpetas, de la 00 a la 14 (ver [estructura-sig.md](estructura-sig.md)). Hugo aclara que esa estructura es por norma y que el usuario debe poder crear carpetas propias, más bien por proceso.
 
 ## Implicaciones para el diseño
 - Cobro por usuario: necesitamos un límite de usuarios activos por `Empresa` (tope del paquete).
@@ -61,7 +61,6 @@ Formatos de auditoría interna (notificación, lista de verificación vacía, as
 - Documentos: carpetas base del SIG más carpetas creadas por el usuario.
 
 ## Pendientes
-- Pedir a Hugo el resto de la estructura documental (a partir de la carpeta 03).
-- Recibir de Hugo la estructura documental y los ejemplos de ITP (lleno y vacío) y de listas de verificación.
+- Recibir de Hugo el ITP vacío (llegó uno lleno) y una segunda lista de verificación de ejemplo.
 - Definir cuáles son los "par de módulos más" que acompañan a Cumplimiento legal (ahora también en la primera fase).
 - Confirmar la reactivación del dominio makeithms.com.
